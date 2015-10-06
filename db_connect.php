@@ -1,8 +1,8 @@
 <?php 
-    $username = "root"; 
-    $password = "tav110xx0B"; 
-    $host = "127.0.0.1"; 
-    $dbname = "tavoo_db"; 
+    $username = ""; 
+    $password = ""; 
+    $host = ""; 
+    $dbname = ""; 
 
     $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'); 
     $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET CHARACTER SET utf8;');
