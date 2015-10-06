@@ -1,5 +1,5 @@
 <?php  
-    $connection = mysqli_connect("127.0.0.1", "root", "tav110xx0B", "tavoo_db")
+    $connection = mysqli_connect("", "", "", "")
                   or die("Error " . mysqli_error($connection));
 
     $query = "SELECT id, name, address, lat, lng
