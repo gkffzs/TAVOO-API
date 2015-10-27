@@ -1,5 +1,5 @@
 ## TAVOO API
-Current repository contains the files for the API of [**TAVOO**](https://github.com/gkffzs/TAVOO). The use of the "API" term may be an overkill, as the above are only mostly simple PHP files that handle the communication with the database on the server. But still, it is the communication layer between the mobile application and the database.
+Current repository contains the files for the API of [**TAVOO**](https://github.com/gkffzs/TAVOO). Calling those "API" may be an overkill, as the above are (mostly) simple PHP files that handle the communication with the database on the server. But still, it is the communication layer between the mobile application and the database.
 
 #### Functionalities
 Each file is used for a different function of the application. More particularly:
@@ -37,7 +37,7 @@ Each file is used for a different function of the application. More particularly
       <td><b>db_connect.php</b></td>
     </tr>
     <tr>
-      <td><i>This file is responsible for the connection to the database, it includes all the necessary connection information.</i></td>
+      <td><i>This file is responsible for the connection to the database, includes the necessary connection information.</i></td>
     </tr>
     
     <tr>
