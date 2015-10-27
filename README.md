@@ -1,96 +1,6 @@
 ## TAVOO API
 Current repository contains the files for the API of [**TAVOO**](https://github.com/gkffzs/TAVOO). Calling those "API" may be an overkill, as the above are (mostly) simple PHP files that handle the communication with the database on the server. But still, it is the communication layer between the mobile application and the database.
 
-#### Functionalities
-Each file is used for a different function of the application. More particularly:
-
-<table>
-    <tr>
-      <td><b>add_play_location.php</b></td>
-    </tr>
-    <tr>
-      <td><i>This file is used for inserting a new location to the respective table.</i></td>
-    </tr>
-    
-    <tr>
-      <td><b>checked_users.php</b></td>
-    </tr>
-    <tr>
-      <td><i>This file returns the number of the users that have checked-in a specific location.</i></td>
-    </tr>
-    
-    <tr>
-      <td><b>checkin.php</b></td>
-    </tr>
-    <tr>
-      <td><i>This file checks a user in a location.</i></td>
-    </tr>
-    
-    <tr>
-      <td><b>checkout.php</b></td>
-    </tr>
-    <tr>
-      <td><i>This file checks a user out of a location.</i></td>
-    </tr>
-    
-    <tr>
-      <td><b>db_connect.php</b></td>
-    </tr>
-    <tr>
-      <td><i>This file is responsible for the connection to the database, includes the necessary connection information.</i></td>
-    </tr>
-    
-    <tr>
-      <td><b>logging.php</b></td>
-    </tr>
-    <tr>
-      <td><i>This file is used for registering the users' logs.</i></td>
-    </tr>
-    
-    <tr>
-      <td><b>login.php</b></td>
-    </tr>
-    <tr>
-      <td><i>This file manages the login process of a user.</i></td>
-    </tr>
-    
-    <tr>
-      <td><b>play_locations.php</b></td>
-    </tr>
-    <tr>
-      <td><i>This file returns all the locations that are stored in the respective table, in XML form.</i></td>
-    </tr>
-    
-    <tr>
-      <td><b>rate.php</b></td>
-    </tr>
-    <tr>
-      <td><i>This file registers a rating for a location in the respective table.</i></td>
-    </tr>
-    
-    <tr>
-      <td><b>rating.php</b></td>
-    </tr>
-    <tr>
-      <td><i>This file returns the rating (mean of all ratings) of a specific location.</i></td>
-    </tr>
-    
-    <tr>
-      <td><b>register.php</b></td>
-    </tr>
-    <tr>
-      <td><i>This file handles the registration of a new user of the application to the database.</i></td>
-    </tr>
-    
-    <tr>
-      <td><b>vets.json</b></td>
-    </tr>
-    <tr>
-      <td><i>This is a simple JSON file, containing information about the vets in an area (here, in <a href="https://en.wikipedia.org/wiki/Patras">Patras</a>).</i></td>
-    </tr>
-    
-</table>
-
 #### Database
 The structure of the database is pretty simple, too. It consists of 5 tables, with a few interconnections among them. There is a table called **users** (that stores the basic information about the registered users), a table called **locations** (that stores the basic information about the locations that are suitable for meetings and play), a table called **ratings** (which contains a user's rating for a location), a table called **checked** (that contains information on the location of a user who has performed check-in), and finally, a table called **logs** (which is used for storing various information about the activity of the users in the pre-alpha version of the application).
 
@@ -227,8 +137,98 @@ CREATE TABLE IF NOT EXISTS `logs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 ```
 
-#### Instructions
-In order to have this API set on a server, some things need to be taken care of first. *(to be updated)*
+#### Functionalities
+Each file is used for a different function of the application. More particularly:
 
-#### TO-DO
-*(to be updated)*
+<table>
+    <tr>
+      <td><b>add_play_location.php</b></td>
+    </tr>
+    <tr>
+      <td><i>This file is used for inserting a new location to the respective table.</i></td>
+    </tr>
+    
+    <tr>
+      <td><b>checked_users.php</b></td>
+    </tr>
+    <tr>
+      <td><i>This file returns the number of the users that have checked-in a specific location.</i></td>
+    </tr>
+    
+    <tr>
+      <td><b>checkin.php</b></td>
+    </tr>
+    <tr>
+      <td><i>This file checks a user in a location.</i></td>
+    </tr>
+    
+    <tr>
+      <td><b>checkout.php</b></td>
+    </tr>
+    <tr>
+      <td><i>This file checks a user out of a location.</i></td>
+    </tr>
+    
+    <tr>
+      <td><b>db_connect.php</b></td>
+    </tr>
+    <tr>
+      <td><i>This file is responsible for the connection to the database, includes the necessary connection information.</i></td>
+    </tr>
+    
+    <tr>
+      <td><b>logging.php</b></td>
+    </tr>
+    <tr>
+      <td><i>This file is used for registering the users' logs.</i></td>
+    </tr>
+    
+    <tr>
+      <td><b>login.php</b></td>
+    </tr>
+    <tr>
+      <td><i>This file manages the login process of a user.</i></td>
+    </tr>
+    
+    <tr>
+      <td><b>play_locations.php</b></td>
+    </tr>
+    <tr>
+      <td><i>This file returns all the locations that are stored in the respective table, in XML form.</i></td>
+    </tr>
+    
+    <tr>
+      <td><b>rate.php</b></td>
+    </tr>
+    <tr>
+      <td><i>This file registers a rating for a location in the respective table.</i></td>
+    </tr>
+    
+    <tr>
+      <td><b>rating.php</b></td>
+    </tr>
+    <tr>
+      <td><i>This file returns the rating (mean of all ratings) of a specific location.</i></td>
+    </tr>
+    
+    <tr>
+      <td><b>register.php</b></td>
+    </tr>
+    <tr>
+      <td><i>This file handles the registration of a new user of the application to the database.</i></td>
+    </tr>
+    
+    <tr>
+      <td><b>vets.json</b></td>
+    </tr>
+    <tr>
+      <td><i>This is a simple JSON file, containing information about the vets in an area (here, in <a href="https://en.wikipedia.org/wiki/Patras">Patras</a>).</i></td>
+    </tr>
+    
+</table>
+
+#### Instructions
+In order to have this API set on a server, two things need to be taken care of first. Assuming you have available space on a server (or a virtual server, like [WampServer](http://www.wampserver.com/en/)), place the current repository in a folder there. You also have to create the database and the forementioned tables. Then, you have to add the necessary information (username, password, host, database name) in the files `db_connect.php` and `play_locations.php`, so that the API can connect with the database.
+
+#### Licence
+[GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.en.html).
